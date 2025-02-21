@@ -24,7 +24,9 @@ const analytics = getAnalytics(app);
 const db = getFirestore(app);
 const auth = getAuth(app);
 
-export { db, auth };
+console.log("Firebase app initialized", app);
+
+export { auth, db };
 
 function showMessage(message, divId){
     var messageDiv=document.getElementById(divId);
@@ -78,4 +80,52 @@ signUp.addEventListener('click', (event) => {
             showMessage('unable to create User', 'signUpMessage');
         }
     })
+});
+
+
+// Obtiene el formulario de inicio de sesión
+const loginForm = document.getElementById('login-form');
+
+// Agrega un evento de envío al formulario
+loginForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  // Obtiene los valores del formulario
+  const email = document.getElementById('email').value;
+  const password = document.getElementById('password').value;
+
+  // Autentica al usuario con Firebase
+  firebase.auth().signInWithEmailAndPassword(email, password)
+    .then((userCredential) => {
+      window.location.href = "/inicio.html";
+      // El usuario ha sido autenticado correctamente
+      const user = userCredential.user;
+      console.log('Usuario autenticado:', user);
+    })
+    .catch((error) => {
+      // Ha ocurrido un error durante la autenticación
+      console.error('Error de autenticación:', error);
+    });
+});
+
+
+// Obtiene el enlace para cerrar sesión
+const cerrarSesionLink = document.getElementById('cerrar-sesion');
+
+// Agrega un evento de clic al enlace
+cerrarSesionLink.addEventListener('click', (e) => {
+  e.preventDefault();
+
+  // Cierra la sesión del usuario
+  firebase.auth().signOut()
+    .then(() => {
+      // La sesión ha sido cerrada correctamente
+      console.log('Sesión cerrada');
+      // Redirige al usuario a la página de inicio de sesión
+      window.location.href = 'login.html';
+    })
+    .catch((error) => {
+      // Ha ocurrido un error durante el cierre de la sesión
+      console.error('Error de cierre de sesión:', error);
+    });
 });
