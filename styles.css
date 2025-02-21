@@ -1,0 +1,279 @@
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 5px;
+    background-color: rgb(0, 175, 215);
+}
+
+.hero-logo{
+    width: 200px;
+}
+
+.btn {
+    padding: 10px;
+    background-color: rgb(0, 175, 215);
+    border: none;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    float: right;
+}
+
+.steps {
+    padding: 10px;
+    background-color: rgb(196, 214, 0);
+    border: none;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: white;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.hero-text {
+    font-size: 45px;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Pasos */
+.steps {
+    background-color: rgb(196, 214, 0);
+    padding: 10px;
+}
+
+/* Preguntas y Respuestas */
+.qa {
+    padding: 20px;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid rgb(164, 52, 58);
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.question1 {
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid rgb(196, 214, 0);
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.question2 {
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid rgb(0, 47, 108);
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.question2 {
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid rgb(255, 103, 31);
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.question3 {
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid rgb(225, 209, 0);
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.question2 {
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid rgb(255, 103, 31);
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.answer {
+    display: none;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.toggle-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.close-btn {
+    color: red;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
+.footer {
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px
+}
+
+/*bola*/
+
+.container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+canvas {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+/*fonts*/
+
+.poppins-thin {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.poppins-extralight {
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.poppins-light {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-medium {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.poppins-semibold {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.poppins-extrabold {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.poppins-black {
+    font-family: "Poppins", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.poppins-thin-italic {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.poppins-extralight-italic {
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.poppins-light-italic {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.poppins-regular-italic {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.poppins-medium-italic {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.poppins-semibold-italic {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.poppins-bold-italic {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.poppins-extrabold-italic {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.poppins-black-italic {
+    font-family: "Poppins", serif;
+    font-weight: 900;
+    font-style: italic;
+}

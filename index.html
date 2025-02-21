@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evaluación Municipal</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
+  </head>
+  <body>
+    <header class="header">
+      <img src="/assets/logoWhite.png" alt="Logo" class="hero-logo" />
+      <a href="crearcuenta.html"><button id="startBtn" class="btn">Empezar</button></a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="hero-text">
+          EVALÚA Y MEJORA LA GESTIÓN MUNICIPAL DE <br />
+          MANERA RÁPIDA Y DIGITAL
+        </h1>
+        <div class="container">
+          <canvas id="statBall"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pasos -->
+    <section class="steps">
+      <button id="stepsBtn" class="steps">Pasos</button>
+    </section>
+
+    <!-- Preguntas y Respuestas -->
+    <section id="qa-section" class="qa">
+      <h2>Preguntas y respuestas</h2>
+      <br />
+      <div class="question">
+        <span>1. ¿Qué es Hábitat para la Humanidad y cuál es su misión?</span>
+        <button class="toggle-btn" onclick="toggleAnswer('answer1')">+</button>
+      </div>
+      <div id="answer1" class="answer">
+        <p>
+          Hábitat para la Humanidad es una entidad sin ánimo de lucro que se
+          dedica a mejorar las condiciones de vivienda de las familias en
+          situaciones de vulnerabilidad. Su propósito es asegurar que todas las
+          personas dispongan de un hogar dignamente, fomentando la construcción
+          y renovación de viviendas asequibles.
+        </p>
+        <button class="close-btn" onclick="toggleAnswer('answer1')">X</button>
+      </div>
+      <br />
+      <div class="question1">
+        <span>2. ¿Cómo puedo contribuir con Hábitat para la Humanidad?</span>
+        <button class="toggle-btn" onclick="toggleAnswer('answer2')">+</button>
+      </div>
+      <div id="answer2" class="answer">
+        <p>
+          Puedes participar como voluntario en la edificación de casas, realizar
+          donaciones monetarias o de bienes, o promocionar la labor de la
+          organización. Existen también programas de responsabilidad social y
+          corporativa para compañías que desean colaborar.
+          <br />
+          📌Consulta las opciones de voluntariado y donación en su sitio web.
+        </p>
+        <button class="close-btn" onclick="toggleAnswer('answer2')">X</button>
+      </div>
+      <br />
+      <div class="question2">
+        <span
+          >3. ¿Cómo puedo determinar si soy elegible para recibir asistencia de
+          Hábitat para la Humanidad?</span
+        >
+        <button class="toggle-btn" onclick="toggleAnswer('answer3')">+</button>
+      </div>
+      <div id="answer3" class="answer">
+        <p>
+          Cada nación cuenta con requisitos particulares, pero en términos
+          generales, se debe demostrar la necesidad de vivienda, tener ingresos
+          bajos y estar dispuesto a involucrarse en el programa.
+          <br />
+          📌 Comunícate con la oficina de Hábitat en tu país para averiguar si
+          puedes postularte.
+        </p>
+        <button class="close-btn" onclick="toggleAnswer('answer3')">X</button>
+      </div>
+      <br />
+      <div class="question3">
+        <span
+          >4. ¿De qué manera se evalúa el efecto de Hábitat para la Humanidad en
+          una comunidad?</span
+        >
+        <button class="toggle-btn" onclick="toggleAnswer('answer4')">+</button>
+      </div>
+      <div id="answer4" class="answer">
+        <p>
+          Se evalúa mediante la cantidad de casas edificadas, familias que han
+          recibido beneficios, mejoras en la salud y seguridad, y el avance del
+          desarrollo comunitario.
+          <br />
+          📌 Puedes acceder a los informes de impacto en el sitio web de Hábitat
+          o pedir información en su oficina local.
+        </p>
+        <button class="close-btn" onclick="toggleAnswer('answer4')">X</button>
+      </div>
+    </section>
+    <br />
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="#">Link1</a>
+      <a href="#">Link2</a>
+      <a href="#">Link3</a>
+    </footer>
+  </body>
+</html>

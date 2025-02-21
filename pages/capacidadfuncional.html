@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capacidad Funcional | GGU</title>
+    <!-- Estilos de DataTables -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.dataTables.min.css">
+    <link rel="stylesheet" href="/css/formulario.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Barra lateral izquierda para secciones completadas -->
+        <div class="sidebar-left" id="sidebar-left"></div>
+
+        <!-- Contenedor de contenido principal -->
+        <div class="content" id="content">
+            <section class="seccion" id="section-2">
+                <div class="header">
+                    <h1>Capacidad Funcional</h1>
+                </div>
+                <div class="step">
+                    <div class="grid">
+                        <div class="col">
+                            <table id="tabla-funcional">
+                                <tr>
+                                <th>Atributo</th>
+                                <th>Nivel</th>
+                                <th>Origen de la data</th>
+                                </tr>
+                                <tr>
+                                <td>¿El municipio cuenta con un Plan Urbano actualizado?</td>
+                                <td>
+                                    <select name="niveles" id="niveles" class="select2">
+                                        <option value="inicial">Inicial</option>
+                                        <option value="intermedio">Intermedio</option>
+                                        <option value="optimo">Óptimo</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select name="niveles" id="niveles" class="select2">
+                                        <option value="inicial">Revisión documental</option>
+                                        <option value="intermedio">Encuesta a la GPyP</option>
+                                        <option value="optimo">Entrevista y encuesta a la GPyP</option>
+                                        <option value="optimo">Otro</option>
+                                    </select>
+                                </td>
+                                </tr>
+                                <tr>
+                                <td>¿Se realizan revisiones periódicas del PDCL?</td>
+                                <td>
+                                    <select name="niveles" id="niveles" class="select2">
+                                        <option value="inicial">Inicial</option>
+                                        <option value="intermedio">Intermedio</option>
+                                        <option value="optimo">Óptimo</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select name="niveles" id="niveles" class="select2">
+                                        <option value="inicial">Revisión documental</option>
+                                        <option value="intermedio">Encuesta a la GPyP</option>
+                                        <option value="optimo">Entrevista y encuesta a la GPyP</option>
+                                        <option value="optimo">Otro</option>
+                                    </select>
+                                </td>
+                                </tr>
+                                <tr>
+                                <td>¿Existen estrategias claras para reducir edificaciones sin conformidad?</td>
+                                <td>
+                                    <select name="niveles" id="niveles" class="select2">
+                                        <option value="inicial">Inicial</option>
+                                        <option value="intermedio">Intermedio</option>
+                                        <option value="optimo">Óptimo</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select name="niveles" id="niveles" class="select2">
+                                        <option value="inicial">Revisión documental</option>
+                                        <option value="intermedio">Encuesta a la GPyP</option>
+                                        <option value="optimo">Entrevista y encuesta a la GPyP</option>
+                                        <option value="optimo">Otro</option>
+                                    </select>
+                                </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <button id="submit" type="button">Evaluar servicio</button>
+                <a href="capacidadinstalada.html"><button>Atrás</button></a>
+                <a href="analisisprocesos.html"><button>Siguiente</button></a>
+            </section>
+        </div>
+    </div>
+    <!-- jQuery (Necesario para DataTables) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Script de DataTables (versión 2.2.2, actualizado) -->
+    <script src="https://cdn.datatables.net/2.2.2/js/jquery.dataTables.min.js"></script>
+    <script type="module" src="/js/evaluación.js"></script>
+    <script type="module" src="/app/firebase.js"></script>
+</body>
+</html>

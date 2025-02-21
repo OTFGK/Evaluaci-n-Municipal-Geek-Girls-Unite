@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información General | GGU</title>
+    <!-- Estilos de DataTables -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.dataTables.min.css">
+    <link rel="stylesheet" href="/css/formulario.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Barra lateral izquierda para secciones completadas -->
+        <div class="sidebar-left" id="sidebar-left"></div>
+
+        <!-- Contenedor de contenido principal -->
+        <div class="content" id="content">
+            <section class="seccion active" id="section-1">
+                <div class="header">
+                    <h1>Información General</h1>
+                </div>
+                <div class="container-section">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="step">
+                                <h3>Datos del Evaluador</h3>
+                                <div class="grid">
+                                    <div class="col col-input">
+                                        <label for="nombreEvaluador">Nombre del evaluador <span class="required">*</span></label>
+                                        <input type="text" id="nombreEvaluador">
+                                        <span class="error-message" id="error-nombreEvaluador">Este campo es obligatorio</span>
+                                    </div>
+                                </div>
+                                <div class="grid grid-radio">
+                                    <label for="cargoDelEvaluador" class="label-head">Cargo del Evaluador <span class="required">*</span></label>
+                                    <div class="col col-radio">
+                                        <div class="radio">
+                                            <input type="radio" id="cargoFuncionario" name="cargo">
+                                            <label for="cargoFuncionario">Funcionario Municipal</label>
+                                        </div>
+                                    </div>
+                                    <div class="col col-radio">
+                                        <div class="radio">
+                                            <input type="radio" id="cargoGerente" name="cargo">
+                                            <label for="cargoGerente">Gerente de Desarrollo Urbano</label>
+                                        </div>
+                                    </div>
+                                    <div class="col col-radio">
+                                        <div class="radio">
+                                            <input type="radio" id="cargoAdmin" name="cargo">
+                                            <label for="cargoAdmin">Administrador Municipales</label>
+                                        </div>
+                                    </div>
+                                    <div class="col col-radio">
+                                        <div class="radio">
+                                            <input type="radio" id="cargoOtro" name="cargo">
+                                            <label for="cargoOtro">Otro:<input type="text" id="cargoOtro" name="cargo" placeholder="Escribe aquí..."></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="step">
+                                <h3>Datos del Municipio</h3>
+                                <div class="grid">
+                                    <div class="col col-datosmuni">
+                                        <label for="departamento" class="label-head">Departamento: </label>
+                                        <input type="text" id="departamento" value="Lima">
+                                        <span class="error-message" id="error-departamento">Este campo es obligatorio</span>
+                                    </div>
+                                </div>
+                                <div class="grid">
+                                    <div class="col col-datosmuni">
+                                        <label for="provincia" class="label-head">Provincia: </label>
+                                        <input type="text" id="provincia" value="Lima">
+                                        <span class="error-message" id="error-provincia">Este campo es obligatorio</span>
+                                    </div>
+                                </div>
+                                <div class="grid">
+                                    <div class="col col-datosmuni">
+                                        <div class="select">
+                                            <label for="municipio">Municipalidad Distrital de </label>
+                                            <select name="municipio" id="municipio" class="select2 municipio">
+                                                <option value="ancon">Ancón</option>
+                                                <option value="ate">Ate</option>
+                                                <option value="barranco">Barranco</option>
+                                                <option value="breña">Breña</option>
+                                                <option value="carabayllo">Carabayllo</option>
+                                                <option value="chaclacayo">Chaclacayo</option>
+                                                <option value="chorrillos">Chorrillos</option>
+                                                <option value="cieneguilla">Cieneguilla</option>
+                                                <option value="comas">Comas</option>
+                                                <option value="elagustino">El Agustino</option>
+                                                <option value="independencia">Independencia</option>
+                                                <option value="jesusmaria">Jesús María</option>
+                                                <option value="lamolina">La Molina</option>
+                                                <option value="lavictoria">La Victoria</option>
+                                                <option value="lince">Lince</option>
+                                                <option value="losolivos">Los Olivos</option>
+                                                <option value="lurigancho">Lurigancho</option>
+                                                <option value="lurin">Lurin</option>
+                                                <option value="magdalenadelmar">Magdalena del Mar</option>
+                                                <option value="pueblolibre">Pueblo Libre</option>
+                                                <option value="miraflores">Miraflores</option>
+                                                <option value="pachacamac">Pachacamác</option>
+                                                <option value="pucusana">Pucusana</option>
+                                                <option value="puentepiedra">Puente Piedra</option>
+                                                <option value="puntahermosa">Punta Hermosa</option>
+                                                <option value="puntanegra">Punta Negra</option>
+                                                <option value="rimac">Rímac</option>
+                                                <option value="sanbartolo">San Bartolo</option>
+                                                <option value="sanborja">San Borja</option>
+                                                <option value="san isidro">San Isidro</option>
+                                                <option value="sanjuandelurigancho">San Juan de Lurigancho</option>
+                                                <option value="sanjuandemiraflores">San Juan de Miraflores</option>
+                                                <option value="sanluis">San Luis</option>
+                                                <option value="sanmartindeporres">San Martín de Porres</option>
+                                                <option value="sanmiguel">San Miguel</option>
+                                                <option value="santaanita">Santa Anita</option>
+                                                <option value="santamariadelmar">Santa María del Mar</option>
+                                                <option value="santarosa">Santa Rosa</option>
+                                                <option value="santiagodesurco">Santiago de Surco</option>
+                                                <option value="surquillo">Surquillo</option>
+                                                <option value="villaelsalvador">Villa El Salvador</option>
+                                                <option value="villamariadeltriunfo">Villa María del Triunfo</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid grid-radio">
+                                    <label for="entidadPertenece">Entidad a la que pertenece <span class="required">*</span></label>
+                                    <div class="col col-radio">
+                                        <div class="radio">
+                                            <input type="radio" id="entidadDistrital" name="entidad">
+                                            <label for="entidadDistrital">Municipalidad Distrital</label>
+                                        </div>
+                                    </div>
+                                    <div class="col col-radio">
+                                        <div class="radio">
+                                            <input type="radio" id="entidadProvincial" name="entidad">
+                                            <label for="entidadProvincial">Municipalidad Provincial</label>
+                                        </div>
+                                    </div>
+                                    <div class="col col-radio">
+                                        <div class="radio">
+                                            <input type="radio" id="entidadRegional" name="entidad">
+                                            <label for="entidadRegional">Municipalidad Regional</label>
+                                        </div>
+                                    </div>
+                                    <div class="col col-radio">
+                                        <div class="radio">
+                                            <label for="entidadOtro">Otro:<input type="text" id="entidadOtro" name="entidad" placeholder="Escribe aquí..."></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button id="submit" type="button">Evaluar servicio</button>
+                <a href="capacidadinstalada.html"><button>Siguiente</button></a>
+            </section>
+        </div>
+    </div>
+    <!-- jQuery (Necesario para DataTables) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Script de DataTables (versión 2.2.2, actualizado) -->
+    <script src="https://cdn.datatables.net/2.2.2/js/jquery.dataTables.min.js"></script>
+    <script type="module" src="/js/evaluación.js"></script>
+    <script type="module" src="/app/firebase.js"></script>
+</body>
+</html>
